@@ -1,7 +1,0 @@
-astropy
-numpy
-matplotlib
-spectral_cube
-reproject
-scipy
-image_registration
