@@ -4,6 +4,7 @@ env:
   global:
     - CONDA_CHANNELS='astropy-ci-extras astropy'
     - CONDA_DEPENDENCIES="astropy astroquery matplotlib jupyter"
+    - PIP_DEPENDENCIES="reproject spectral-cube image_registration"
     - PYTHON_VERSION=3.6
 
 jobs:
