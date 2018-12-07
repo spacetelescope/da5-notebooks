@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>exec_example_notebook</title>
+<title>exec_Specviz_data_prep</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13111,7 +13111,7 @@ div#notebook {
     <!-- End of mathjax configuration -->
 
 <!-- base css for whole site -->
-<link rel="stylesheet" href="../../pages.css"></head>
+<link rel="stylesheet" href="../../../pages.css"></head>
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -13119,7 +13119,15 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="This-is-a-notebook">This is a notebook<a class="anchor-link" href="#This-is-a-notebook">&#182;</a></h1>
+<h1 id="Specviz-Data-Edit">Specviz Data Edit<a class="anchor-link" href="#Specviz-Data-Edit">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This notebook will reverse the array order of the MIRI LRS Fixed-slit data so that the wavelengths are increasing.</p>
+
 </div>
 </div>
 </div>
@@ -13128,30 +13136,11 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mi">12</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">astropy.io</span> <span class="k">import</span> <span class="n">fits</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[1]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>12</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13161,8 +13150,8 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">12345</span><span class="p">)</span>  <span class="c1"># that&#39;s amazing, I&#39;ve got the same combination on my luggage!</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># open file</span>
+<span class="n">hdu2</span> <span class="o">=</span> <span class="n">fits</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;https://stsci.box.com/shared/static/o0p3f3z8c7wdfp78pfjo1u7p60dwcdrc.fits&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13175,18 +13164,46 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>array([ 1.77704776, -1.3767127 ,  1.74854078, ...,  0.81186303,
-       -0.24240918, -0.80831626])</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Downloading https://stsci.box.com/shared/static/o0p3f3z8c7wdfp78pfjo1u7p60dwcdrc.fits [Done]
+</pre>
+</div>
 </div>
 
 </div>
+</div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># flip the data</span>
+<span class="k">for</span> <span class="n">hdu</span> <span class="ow">in</span> <span class="n">hdu2</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">hdu</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;EXTRACT1D&quot;</span><span class="p">:</span>
+        <span class="n">hdu</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">flip</span><span class="p">(</span><span class="n">hdu</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save changes to new file, close original</span>
+<span class="n">hdu2</span><span class="o">.</span><span class="n">writeto</span><span class="p">(</span><span class="s2">&quot;miriimage_x1d_ref_flipped.fits&quot;</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">hdu2</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
