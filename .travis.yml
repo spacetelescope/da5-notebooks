@@ -2,9 +2,9 @@ language: python
 
 env:
   global:
-    - CONDA_CHANNELS='astropy-ci-extras astropy'
-    - CONDA_DEPENDENCIES="astropy astroquery matplotlib jupyter"
-    - PIP_DEPENDENCIES="reproject spectral-cube image_registration"
+    - CONDA_CHANNELS='astropy-ci-extras astropy http://ssb.stsci.edu/conda-dev'
+    - CONDA_DEPENDENCIES="astropy astroquery matplotlib jupyter jwst"
+    - PIP_DEPENDENCIES="reproject spectral-cube image_registration tweakwcs photutils"
     - PYTHON_VERSION=3.6
 
 jobs:
