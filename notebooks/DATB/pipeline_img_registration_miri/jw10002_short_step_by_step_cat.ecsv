@@ -1,0 +1,130 @@
+# %ECSV 0.9
+# ---
+# datatype:
+# - {name: id, datatype: int64}
+# - {name: xcentroid, unit: pix, datatype: float64}
+# - {name: ycentroid, unit: pix, datatype: float64}
+# - {name: sky_centroid.ra, unit: deg, datatype: float64}
+# - {name: sky_centroid.dec, unit: deg, datatype: float64}
+# - {name: area, unit: pix2, datatype: float64}
+# - {name: source_sum, datatype: float32}
+# - {name: source_sum_err, datatype: float32}
+# - {name: semimajor_axis_sigma, unit: pix, datatype: float64}
+# - {name: semiminor_axis_sigma, unit: pix, datatype: float64}
+# - {name: orientation, unit: deg, datatype: float64}
+# - {name: sky_bbox_ll.ra, unit: deg, datatype: float64}
+# - {name: sky_bbox_ll.dec, unit: deg, datatype: float64}
+# - {name: sky_bbox_ul.ra, unit: deg, datatype: float64}
+# - {name: sky_bbox_ul.dec, unit: deg, datatype: float64}
+# - {name: sky_bbox_lr.ra, unit: deg, datatype: float64}
+# - {name: sky_bbox_lr.dec, unit: deg, datatype: float64}
+# - {name: sky_bbox_ur.ra, unit: deg, datatype: float64}
+# - {name: sky_bbox_ur.dec, unit: deg, datatype: float64}
+# - {name: orientation_sky, unit: deg, datatype: float64}
+# - {name: abmag, datatype: float64}
+# - {name: abmag_error, datatype: float32}
+# meta: !!omap
+# - __serialized_columns__:
+#     area:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: pix2}
+#       value: !astropy.table.SerializedColumn {name: area}
+#     orientation:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: &id001 !astropy.units.Unit {unit: deg}
+#       value: !astropy.table.SerializedColumn {name: orientation}
+#     orientation_sky:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: *id001
+#       value: !astropy.table.SerializedColumn {name: orientation_sky}
+#     semimajor_axis_sigma:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: pix}
+#       value: !astropy.table.SerializedColumn {name: semimajor_axis_sigma}
+#     semiminor_axis_sigma:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: !astropy.units.Unit {unit: pix}
+#       value: !astropy.table.SerializedColumn {name: semiminor_axis_sigma}
+#     sky_bbox_ll:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       dec: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Latitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_ll.dec}
+#       frame: icrs
+#       ra: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Longitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_ll.ra}
+#         wrap_angle: &id002 !astropy.coordinates.Angle
+#           unit: *id001
+#           value: 360.0
+#       representation_type: spherical
+#     sky_bbox_lr:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       dec: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Latitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_lr.dec}
+#       frame: icrs
+#       ra: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Longitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_lr.ra}
+#         wrap_angle: *id002
+#       representation_type: spherical
+#     sky_bbox_ul:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       dec: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Latitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_ul.dec}
+#       frame: icrs
+#       ra: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Longitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_ul.ra}
+#         wrap_angle: *id002
+#       representation_type: spherical
+#     sky_bbox_ur:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       dec: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Latitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_ur.dec}
+#       frame: icrs
+#       ra: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Longitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_bbox_ur.ra}
+#         wrap_angle: *id002
+#       representation_type: spherical
+#     sky_centroid:
+#       __class__: astropy.coordinates.sky_coordinate.SkyCoord
+#       dec: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Latitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_centroid.dec}
+#       frame: icrs
+#       ra: !astropy.table.SerializedColumn
+#         __class__: astropy.coordinates.angles.Longitude
+#         unit: *id001
+#         value: !astropy.table.SerializedColumn {name: sky_centroid.ra}
+#         wrap_angle: *id002
+#       representation_type: spherical
+#     xcentroid:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: &id003 !astropy.units.Unit {unit: pix}
+#       value: !astropy.table.SerializedColumn {name: xcentroid}
+#     ycentroid:
+#       __class__: astropy.units.quantity.Quantity
+#       unit: *id003
+#       value: !astropy.table.SerializedColumn {name: ycentroid}
+# schema: astropy-2.0
+id xcentroid ycentroid sky_centroid.ra sky_centroid.dec area source_sum source_sum_err semimajor_axis_sigma semiminor_axis_sigma orientation sky_bbox_ll.ra sky_bbox_ll.dec sky_bbox_ul.ra sky_bbox_ul.dec sky_bbox_lr.ra sky_bbox_lr.dec sky_bbox_ur.ra sky_bbox_ur.dec orientation_sky abmag abmag_error
+1 604.6340159735471 601.372028066705 0.004129767102591528 7.506415825082169e-05 439068.0 -16837.748 357.67133 679.0958188266508 124.73985328306301 -44.708487473189 0.022782824937037458 -0.018477443012067024 0.022782824770289287 0.016631857045904513 359.98822836717625 -0.01847744301360817 359.98822836734286 0.016631857047267738 225.291512526811 nan -0.023063459
+2 956.303985985785 166.4159645927285 359.9932896553501 -0.013332313849073848 635.0 14078.889 18.089516 1.887234293462247 1.8510178582643897 9.43893957330659 359.9941467040956 -0.01413116497310695 359.9941467041007 -0.012497457403286208 359.9925129964846 -0.014131164887536588 359.99251299649046 -0.012497457327612302 279.4389395733066 15.517879486083984 0.0013950279
+3 523.1087343467115 168.77023098144275 0.006642757268222868 -0.013259744660444373 367.0 6458.2705 13.212438 1.98785243172371 1.6911852249548418 9.80686409383027 0.007216365424624144 -0.013637970498684182 0.007216365424259539 -0.012867353705296031 0.006137501859835241 -0.01363797050396767 0.0061375018596997585 -0.012867353710285445 279.80686409383026 16.364009857177734 0.0022212171
+4 738.4737522803688 598.9781301277825 4.200989225157728e-06 1.2730366910238621e-06 668.0 14022.97 18.362942 1.934705096688389 1.853437212481626 25.010177053117143 0.0007431840611098681 -0.0008457313411576144 0.0007431840633660477 0.0008804503505093334 359.99917112574343 -0.0008457313389135699 359.99917112574644 0.0008804503481784791 295.01017705311716 15.522200584411621 0.0014217609
+5 451.78597907886905 1012.594662557229 0.008841257869990125 0.012750867191447074 680.0 14005.17 18.459166 2.071651167669058 1.8411252132513714 15.281625279945128 0.00958986523306182 0.01191568310904763 0.009589865231117158 0.013641864704275851 0.008017806911455925 0.01191568312791182 0.008017806910259617 0.013641864725880215 285.2816252799451 15.523580551147461 0.0014310275
+6 956.5802688107871 1016.8576443301748 359.9932811391107 0.012882271932714719 761.0 17991.812 20.02982 2.072426803939351 1.906122223726465 -19.615703331840837 359.9941467041774 0.012100630931666807 359.994146704183 0.013888461835814913 359.9922047498637 0.012100630843452892 359.99220474987015 0.013888461734585416 250.38429666815915 15.25161361694336 0.001208722

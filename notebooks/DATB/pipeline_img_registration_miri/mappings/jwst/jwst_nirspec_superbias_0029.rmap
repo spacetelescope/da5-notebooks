@@ -1,0 +1,224 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nirspec_superbias_0028.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'superbias',
+    'filetype' : 'SUPERBIAS',
+    'instrument' : 'NIRSPEC',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nirspec_superbias_0029.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME', 'META.SUBARRAY.XSTART', 'META.SUBARRAY.YSTART', 'META.SUBARRAY.XSIZE', 'META.SUBARRAY.YSIZE'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '7ac8192284a1a8074949af5250924a46915d489c',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+    'suffix' : 'sbias',
+    'text_descr' : 'Super Bias',
+}
+
+selector = Match({
+    ('NRS1', 'ANY', 'GENERIC', '1', '1', '2048', '2048') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_superbias_0002.fits',
+    }),
+    ('NRS1', 'NRSIRS2|NRSIRS2RAPID', 'FULL', '1', '1', '2048', '2048') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_superbias_0110.fits',
+        '2015-11-01 00:00:00' : 'jwst_nirspec_superbias_0113.fits',
+        '2016-01-15 00:00:00' : 'jwst_nirspec_superbias_0117.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'ALLSLITS', '1', '897', '2048', '256') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0050.fits',
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0109.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'FULL', '1', '1', '2048', '2048') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_superbias_0026.fits',
+        '2010-06-01 00:00:00' : 'jwst_nirspec_superbias_0027.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0028.fits',
+        '2013-07-01 00:00:00' : 'jwst_nirspec_superbias_0029.fits',
+        '2014-01-01 00:00:00' : 'jwst_nirspec_superbias_0080.fits',
+        '2014-06-24 00:00:00' : 'jwst_nirspec_superbias_0111.fits',
+        '2014-07-01 00:00:00' : 'jwst_nirspec_superbias_0030.fits',
+        '2015-11-01 00:00:00' : 'jwst_nirspec_superbias_0087.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'STRIPE', '1', '513', '2048', '256') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0031.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB1024A', '1', '946', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0083.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB1024A', '1', '963', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0085.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB1024B', '1025', '946', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0089.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB1024B', '1025', '963', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0106.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB2048', '1', '946', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0107.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB2048', '1', '963', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0101.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB2048', '1', '967', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0077.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB32', '1399', '975', '32', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0071.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB512', '1025', '957', '512', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0075.fits',
+        '2016-01-15 00:00:00' : 'jwst_nirspec_superbias_0090.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUB512S', '1025', '965', '512', '16') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0151.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS200A1', '1', '1041', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0091.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS200A1', '1', '1054', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0102.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS200A2', '1', '1005', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0074.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS200A2', '1', '1018', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0100.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS200B1', '1', '905', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0108.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS200B1', '1', '918', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0096.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS400A1', '1', '965', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0105.fits',
+    }),
+    ('NRS1', 'NRS|NRSRAPID', 'SUBS400A1', '1', '978', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0097.fits',
+    }),
+    ('NRS2', 'ANY', 'GENERIC', '1', '1', '2048', '2048') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nirspec_superbias_0003.fits',
+    }),
+    ('NRS2', 'NRSIRS2|NRSIRS2RAPID', 'FULL', '1', '1', '2048', '2048') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nirspec_superbias_0112.fits',
+        '2015-11-01 00:00:00' : 'jwst_nirspec_superbias_0114.fits',
+        '2016-01-15 00:00:00' : 'jwst_nirspec_superbias_0115.fits',
+        '2016-01-19 12:00:00' : 'jwst_nirspec_superbias_0118.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'ALLSLITS', '1', '895', '2048', '256') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0049.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'ALLSLITS', '1', '897', '2048', '256') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0148.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'FULL', '1', '1', '2048', '2048') : UseAfter({
+        '2000-01-01 00:00:00' : 'jwst_nirspec_superbias_0034.fits',
+        '2010-06-01 00:00:00' : 'jwst_nirspec_superbias_0035.fits',
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0036.fits',
+        '2013-07-01 00:00:00' : 'jwst_nirspec_superbias_0037.fits',
+        '2014-01-01 00:00:00' : 'jwst_nirspec_superbias_0082.fits',
+        '2014-06-24 00:00:00' : 'jwst_nirspec_superbias_0116.fits',
+        '2014-07-01 00:00:00' : 'jwst_nirspec_superbias_0038.fits',
+        '2015-11-01 00:00:00' : 'jwst_nirspec_superbias_0104.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'STRIPE', '1', '513', '2048', '256') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0039.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024A', '1', '1055', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0084.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024A', '1', '1072', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0073.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024A', '1', '946', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0136.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024A', '1', '963', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0141.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024B', '1025', '1055', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0103.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024B', '1025', '1072', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0092.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024B', '1025', '946', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0144.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB1024B', '1025', '963', '1024', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0150.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB2048', '1', '1051', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0072.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB2048', '1', '1055', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0093.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB2048', '1', '1072', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0086.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB2048', '1', '946', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0142.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB2048', '1', '963', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0145.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUB2048', '1', '967', '2048', '32') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0135.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A1', '1', '1041', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0149.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A1', '1', '1056', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0138.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A1', '1', '930', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0078.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A1', '1', '945', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0099.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A2', '1', '1005', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0146.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A2', '1', '1020', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0137.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A2', '1', '966', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0076.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200A2', '1', '981', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0094.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200B1', '1', '1068', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0088.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200B1', '1', '1083', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0095.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200B1', '1', '903', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0147.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200B1', '1', '918', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0143.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS200B1', '1036', '1', '32', '2048') : UseAfter({
+        '2013-01-01 00:00:00' : 'jwst_nirspec_superbias_0041.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS400A1', '1', '1006', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0081.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS400A1', '1', '1021', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0079.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS400A1', '1', '965', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0139.fits',
+    }),
+    ('NRS2', 'NRS|NRSRAPID', 'SUBS400A1', '1', '980', '2048', '64') : UseAfter({
+        '2015-01-01 00:00:00' : 'jwst_nirspec_superbias_0140.fits',
+    }),
+})

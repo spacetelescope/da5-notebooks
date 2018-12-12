@@ -1,0 +1,26 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_miri_saturation_0008.rmap',
+    'filekind' : 'SATURATION',
+    'instrument' : 'MIRI',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_miri_saturation_0009.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR',), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '5dd1455b4ac3cd9c8b2230f1ca7babafea3731cc',
+}
+
+selector = Match({
+    'MIRIFULONG' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_saturation_0015.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_saturation_0021.fits',
+    }),
+    'MIRIFUSHORT' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_saturation_0016.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_saturation_0023.fits',
+    }),
+    'MIRIMAGE' : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_miri_saturation_0017.fits',
+        '2015-08-01 00:00:00' : 'jwst_miri_saturation_0022.fits',
+    }),
+})

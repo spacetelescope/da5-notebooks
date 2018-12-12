@@ -1,0 +1,35 @@
+{
+    "asn_type": "None",
+    "code_version": "0.9.19",
+    "asn_id": "a3001",
+    "products": [
+        {
+            "name": "det_dithered_5stars_tweak.fits",
+            "members": [
+                {
+                    "expname": "det_image_1_MIRIMAGE_F770Wexp1_5stars_cal.fits",
+                    "exptype": "science"
+                },
+                {
+                    "expname": "det_image_1_MIRIMAGE_F770Wexp2_5stars_cal.fits",
+                    "exptype": "science"
+                },
+                {
+                    "expname": "det_image_2_MIRIMAGE_F770Wexp1_5stars_cal.fits",
+                    "exptype": "science"
+                },
+                {
+                    "expname": "det_image_2_MIRIMAGE_F770Wexp2_5stars_cal.fits",
+                    "exptype": "science"
+                }
+            ]
+        }
+    ],
+    "asn_pool": "none",
+    "version_id": null,
+    "asn_rule": "DMS_Level3_Base",
+    "degraded_status": "No known degraded exposures in association.",
+    "program": "noprogram",
+    "constraints": "No constraints",
+    "target": "none"
+}

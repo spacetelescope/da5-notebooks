@@ -1,0 +1,79 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_readnoise_0004.rmap',
+    'filekind' : 'READNOISE',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_readnoise_0005.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.DETECTOR', 'META.EXPOSURE.READPATT', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '33a39523a503811d698f6125e92198ca1a446f05',
+    'substitutions' : {
+        'META.SUBARRAY.NAME' : {
+            'GENERIC' : 'N/A',
+        },
+    },
+}
+
+selector = Match({
+    ('NRCA1', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0025.fits',
+    }),
+    ('NRCA1', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0010.fits',
+    }),
+    ('NRCA2', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0024.fits',
+    }),
+    ('NRCA2', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0001.fits',
+    }),
+    ('NRCA3', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0026.fits',
+    }),
+    ('NRCA3', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0011.fits',
+    }),
+    ('NRCA4', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0028.fits',
+    }),
+    ('NRCA4', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0012.fits',
+    }),
+    ('NRCALONG', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0022.fits',
+    }),
+    ('NRCALONG', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0013.fits',
+    }),
+    ('NRCB1', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0019.fits',
+    }),
+    ('NRCB1', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0014.fits',
+    }),
+    ('NRCB2', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0021.fits',
+    }),
+    ('NRCB2', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0015.fits',
+    }),
+    ('NRCB3', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0020.fits',
+    }),
+    ('NRCB3', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0016.fits',
+    }),
+    ('NRCB4', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0027.fits',
+    }),
+    ('NRCB4', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0017.fits',
+    }),
+    ('NRCBLONG', 'ANY', 'GENERIC') : UseAfter({
+        '2015-10-01 00:00:00' : 'jwst_nircam_readnoise_0023.fits',
+    }),
+    ('NRCBLONG', 'N/A', 'GENERIC') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_readnoise_0018.fits',
+    }),
+})

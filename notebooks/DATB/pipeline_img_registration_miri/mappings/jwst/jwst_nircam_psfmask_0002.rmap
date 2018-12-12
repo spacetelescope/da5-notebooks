@@ -1,0 +1,242 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_psfmask_0001.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'PSFMASK',
+    'filetype' : 'PSFMASK',
+    'instrument' : 'NIRCAM',
+    'ld_tpn' : 'nircam_psfmask_ld.tpn',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_psfmask_0002.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.INSTRUMENT.FILTER', 'META.INSTRUMENT.CORONAGRAPH', 'META.SUBARRAY.NAME'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'sha1sum' : '5e4c86602dd9b9fbfe373e0d26f3925b09d977b7',
+    'suffix' : 'psfmask',
+    'text_descr' : 'PSF Mask',
+    'tpn' : 'nircam_psfmask.tpn',
+}
+
+selector = Match({
+    ('F182M', 'MASK210R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0026.fits',
+    }),
+    ('F182M', 'MASK210R', 'SUB640A210R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0073.fits',
+    }),
+    ('F182M', 'MASKSWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0047.fits',
+    }),
+    ('F182M', 'MASKSWB', 'SUB640ASWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0041.fits',
+    }),
+    ('F187N', 'MASK210R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0031.fits',
+    }),
+    ('F187N', 'MASK210R', 'SUB640A210R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0024.fits',
+    }),
+    ('F187N', 'MASKSWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0030.fits',
+    }),
+    ('F187N', 'MASKSWB', 'SUB640ASWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0006.fits',
+    }),
+    ('F200W', 'MASK210R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0034.fits',
+    }),
+    ('F200W', 'MASK210R', 'SUB640A210R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0053.fits',
+    }),
+    ('F200W', 'MASKSWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0011.fits',
+    }),
+    ('F200W', 'MASKSWB', 'SUB640ASWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0070.fits',
+    }),
+    ('F210M', 'MASK210R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0038.fits',
+    }),
+    ('F210M', 'MASK210R', 'SUB640A210R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0049.fits',
+    }),
+    ('F210M', 'MASKSWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0061.fits',
+    }),
+    ('F210M', 'MASKSWB', 'SUB640ASWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0036.fits',
+    }),
+    ('F212N', 'MASK210R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0013.fits',
+    }),
+    ('F212N', 'MASK210R', 'SUB640A210R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0028.fits',
+    }),
+    ('F212N', 'MASKSWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0022.fits',
+    }),
+    ('F212N', 'MASKSWB', 'SUB640ASWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0032.fits',
+    }),
+    ('F250M', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0074.fits',
+    }),
+    ('F250M', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0066.fits',
+    }),
+    ('F250M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0035.fits',
+    }),
+    ('F250M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0064.fits',
+    }),
+    ('F250M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0037.fits',
+    }),
+    ('F250M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0042.fits',
+    }),
+    ('F277W', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0005.fits',
+    }),
+    ('F277W', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0069.fits',
+    }),
+    ('F300M', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0040.fits',
+    }),
+    ('F300M', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0054.fits',
+    }),
+    ('F300M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0059.fits',
+    }),
+    ('F300M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0062.fits',
+    }),
+    ('F300M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0043.fits',
+    }),
+    ('F300M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0045.fits',
+    }),
+    ('F322W2', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0063.fits',
+    }),
+    ('F322W2', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0015.fits',
+    }),
+    ('F322W2', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0057.fits',
+    }),
+    ('F322W2', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0025.fits',
+    }),
+    ('F335M', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0020.fits',
+    }),
+    ('F335M', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0019.fits',
+    }),
+    ('F335M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0060.fits',
+    }),
+    ('F335M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0027.fits',
+    }),
+    ('F335M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0039.fits',
+    }),
+    ('F335M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0003.fits',
+    }),
+    ('F356W', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0012.fits',
+    }),
+    ('F356W', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0002.fits',
+    }),
+    ('F356W', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0008.fits',
+    }),
+    ('F356W', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0065.fits',
+    }),
+    ('F360M', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0017.fits',
+    }),
+    ('F360M', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0021.fits',
+    }),
+    ('F360M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0033.fits',
+    }),
+    ('F360M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0056.fits',
+    }),
+    ('F360M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0072.fits',
+    }),
+    ('F360M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0007.fits',
+    }),
+    ('F410M', 'MASK335R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0046.fits',
+    }),
+    ('F410M', 'MASK335R', 'SUB320A335R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0067.fits',
+    }),
+    ('F410M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0010.fits',
+    }),
+    ('F410M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0071.fits',
+    }),
+    ('F410M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0052.fits',
+    }),
+    ('F410M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0048.fits',
+    }),
+    ('F430M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0050.fits',
+    }),
+    ('F430M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0016.fits',
+    }),
+    ('F430M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0044.fits',
+    }),
+    ('F430M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0055.fits',
+    }),
+    ('F444W', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0029.fits',
+    }),
+    ('F444W', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0004.fits',
+    }),
+    ('F444W', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0051.fits',
+    }),
+    ('F444W', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0018.fits',
+    }),
+    ('F460M', 'MASK430R', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0068.fits',
+    }),
+    ('F460M', 'MASK430R', 'SUB320A430R') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0058.fits',
+    }),
+    ('F460M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0023.fits',
+    }),
+    ('F460M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0014.fits',
+    }),
+    ('F480M', 'MASKLWB', 'FULL') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0001.fits',
+    }),
+    ('F480M', 'MASKLWB', 'SUB320ALWB') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_psfmask_0009.fits',
+    }),
+})

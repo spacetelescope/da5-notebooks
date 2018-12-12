@@ -1,0 +1,135 @@
+header = {
+    'classes' : ('Match', 'UseAfter'),
+    'derived_from' : 'jwst_nircam_distortion_0017.rmap',
+    'file_ext' : '.fits',
+    'filekind' : 'DISTORTION',
+    'filetype' : 'DISTORTION',
+    'instrument' : 'NIRCAM',
+    'mapping' : 'REFERENCE',
+    'name' : 'jwst_nircam_distortion_0018.rmap',
+    'observatory' : 'JWST',
+    'parkey' : (('META.EXPOSURE.TYPE', 'META.INSTRUMENT.DETECTOR', 'META.INSTRUMENT.CHANNEL', 'META.INSTRUMENT.PUPIL', 'META.INSTRUMENT.FILTER'), ('META.OBSERVATION.DATE', 'META.OBSERVATION.TIME')),
+    'reference_to_dataset' : {
+        'CHANNEL' : 'META.INSTRUMENT.CHANNEL',
+        'DETECTOR' : 'META.INSTRUMENT.DETECTOR',
+        'EXP_TYPE' : 'META.EXPOSURE.TYPE',
+    },
+    'sha1sum' : '117e62577ab91652a15d4a6b6d545ca87ad87f4b',
+    'suffix' : 'distortion',
+    'text_descr' : 'Distortion',
+}
+
+selector = Match({
+    ('N/A', 'NRCA1', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0001.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0019.asdf',
+    }),
+    ('N/A', 'NRCA2', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0002.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0014.asdf',
+    }),
+    ('N/A', 'NRCA3', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0003.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0012.asdf',
+    }),
+    ('N/A', 'NRCA4', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0004.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0020.asdf',
+    }),
+    ('N/A', 'NRCALONG', 'LONG', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0005.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0017.asdf',
+    }),
+    ('N/A', 'NRCB1', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0010.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0011.asdf',
+    }),
+    ('N/A', 'NRCB2', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0009.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0015.asdf',
+    }),
+    ('N/A', 'NRCB3', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0008.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0016.asdf',
+    }),
+    ('N/A', 'NRCB4', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0007.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0018.asdf',
+    }),
+    ('N/A', 'NRCBLONG', 'LONG', 'N/A', 'N/A') : UseAfter({
+        '1900-01-01 00:00:00' : 'jwst_nircam_distortion_0006.asdf',
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0013.asdf',
+    }),
+    ('NRC_CORON|NRC_TACONFIRM|NRC_TACQ', 'NRCA2', 'SHORT', 'MASKRND', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0039.asdf',
+    }),
+    ('NRC_CORON|NRC_TACONFIRM|NRC_TACQ', 'NRCA4', 'SHORT', 'MASKBAR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0037.asdf',
+    }),
+    ('NRC_CORON|NRC_TACONFIRM|NRC_TACQ', 'NRCALONG', 'LONG', 'MASKBAR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0043.asdf',
+    }),
+    ('NRC_CORON|NRC_TACONFIRM|NRC_TACQ', 'NRCALONG', 'LONG', 'MASKRND', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0038.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA1', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0029.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA2', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0024.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA3', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0022.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCA4', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0030.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCALONG', 'LONG', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0027.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB1', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0021.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB2', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0025.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB3', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0026.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCB4', 'SHORT', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0028.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TACQ|NRC_TACONFIRM|NRC_FOCUS|NRC_TSIMAGE', 'NRCBLONG', 'LONG', 'N/A', 'N/A') : UseAfter({
+        '2014-01-01 00:00:00' : 'jwst_nircam_distortion_0023.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCA1', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0061.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCA2', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0060.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCA3', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0058.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCA4', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0066.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCALONG', 'LONG', 'CLEAR|F323N|F405N|F466N|F470N|PINHOLES|MASKIPR|GRISMR|GRISMC', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0059.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCB1', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0065.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCB2', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0062.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCB3', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0064.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCB4', 'SHORT', 'CLEAR|F162M|F164N|GDHS0|GDHS60|WLM8|WLP8|PINHOLES|MASKIPR', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0057.asdf',
+    }),
+    ('NRC_IMAGE|NRC_TSIMAGE|NRC_FLAT|NRC_LED|NRC_WFSC|NRC_GRISM|NRC_TSGRISM|NRC_FOCUS', 'NRCBLONG', 'LONG', 'CLEAR|F323N|F405N|F466N|F470N|PINHOLES|MASKIPR|GRISMR|GRISMC', 'N/A') : UseAfter({
+        '2014-10-01 00:00:00' : 'jwst_nircam_distortion_0063.asdf',
+    }),
+})
