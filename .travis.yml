@@ -5,7 +5,7 @@ env:
     - CONDA_CHANNELS='astropy-ci-extras astropy http://ssb.stsci.edu/conda-dev'
     - CONDA_DEPENDENCIES="astropy astroquery matplotlib jupyter jwst webbpsf"
     - PIP_DEPENDENCIES="reproject spectral-cube image_registration tweakwcs photutils"
-    - PYTHON_VERSION=3.6
+    - PYTHON_VERSION=3.7
 
 jobs:
   include:
