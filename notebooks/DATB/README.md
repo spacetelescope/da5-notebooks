@@ -1,1 +1,0 @@
-This directory contains notebooks by the Data Analysis Tools Branch, primarily for internal consumption at STScI (or limited external use).  Notebooks meant for wide public consumption should instead target the spacetelescope/notebooks repository.
