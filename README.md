@@ -4,7 +4,7 @@ This repository contains Jupyter notebooks for the JWST DA build 5.
 
 ## Contents
 
-This repository holds the notebooks themselves, but in an unexecuted form. If you want to view the notebooks, you can either execute them individially, or build the web page preview of them.
+This repository holds the notebooks themselves, but in an unexecuted form. If you want to view the notebooks, you can either execute them individually, or build the web page preview of them.
 
 ### Running Notebooks Interactively
 
