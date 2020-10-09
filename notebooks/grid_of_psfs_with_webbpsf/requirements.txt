@@ -2,4 +2,4 @@ astropy
 photutils>=0.6
 poppy>=0.8.0
 webbpsf>=0.8.0
-
+pysynphot>=0.9.12
